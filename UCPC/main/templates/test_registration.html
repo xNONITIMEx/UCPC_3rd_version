@@ -1,0 +1,83 @@
+{% extends 'main/base.html' %}
+
+{% load static%}
+
+{% block title %}Main page{% endblock %}
+
+{% block content %}
+    <div class="wrapper2">
+        <div class="auth-form">
+            <section class="intro2">
+                <nav class="auth__nav">
+                    <div class="auth__type">
+                        <div class="auth">
+                            <a class="auth__link_entrence" href="authorization">Вход</a>
+                            <img src="{% static 'main/img/other/auth_form_rect_main_line2.png' %}" class="auth__line2">
+                        </div>
+                        <div class="reg">
+                            <a class="reg__link_registration" href="registration">Регистрация</a>
+                            <img src="{% static 'main/img/other/auth_form_rect_main_line1.png' %}" class="auth__line1">
+                        </div>
+                    </div>
+                    <div class="auth__society">
+                        <ul class="auth__list">
+                            <li class="auth__item">
+                                <a href="#!" class="auth__link">
+                                    <img src="{% static 'main/img/svg/Auth/google.svg' %}" class="nav-logo_auth_google">
+                                </a>
+                            </li>
+                            <li class="auth__item">
+                                <a href="#!" class="auth__link">
+                                    <img src="{% static 'main/img/svg/Auth/vk.svg' %}" class="nav-logo_vk">
+                                </a>
+                            </li>
+                            <li class="auth__item">
+                                <a href="#!" class="auth__link">
+                                    <img src="{% static 'main/img/svg/Auth/twitter.svg' %}" class="nav-logo_twitter">
+                                </a>
+                            </li>
+                            <li class="auth__item">
+                                <a href="#!" class="auth__link">
+                                    <img src="{% static 'main/img/svg/Auth/instagramm.svg' %}" class="nav-logo_instagramm">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <form method="post" class="auth-form">
+                {% csrf_token %}
+                    <div class="form__login">
+                        <p class="reg_form__base_text">Имя пользователя</p>
+                        <div class="create_login">
+                            {{ form.nickname }} <br>
+                        </div>
+                        <img src="{% static 'main/img/other/auth_form_rect_main_line3.png' %}" class="auth__line3">
+                    </div>
+                    <div class="form__email">
+                        <p class="reg_form__base_text">Почта</p>
+                        <div class="create_email">
+                            {{ form.mail }}
+                        </div>
+                        <img src="{% static 'main/img/other/auth_form_rect_main_line3.png' %}" class="auth__line3">
+                    </div>
+                    <div class="form__password">
+                        <p class="reg_form__base_text">Пароль</p>
+                        <div class="create_password">
+                            {{ form.password }}
+                            <img src="{% static 'main/img/svg/open_eye.svg' %}" class="auth__password_eye">
+                        </div>
+                        <img src="{% static 'main/img/other/auth_form_rect_main_line3.png' %}" class="auth__line3">
+                    </div>
+                <<div class="form__btn_final_submit">
+                    <button type="submit" class="btn btn-danger" style="background: #3FBF5B; border: 0px; border-radius: 50px; width: 200px; height: 40px;">Создать</button>
+                </div>
+                    <br>
+
+
+            </form>
+            </section>
+        </div>
+    </div>
+{% endblock %}
+
+
