@@ -1,0 +1,184 @@
+{% extends 'main/base.html' %}
+
+{% load static%}
+
+{% block title %}Main page{% endblock %}
+
+{% block content %}
+     <section class="background_image_profile_form">
+            <div class="wrapper_full">
+                <div class="form__profile">
+                    <div class="profile_information">
+                        <div class="background_information_img">
+                            <img src="../img/other/Rectangle201.png" alt="">
+                        </div>
+                        <div class="profile_pic">
+                            <input class="load_profile_image" type="file" id="avatar" name="avatar" accept="image/png, image/jpeg, image/jpg" >
+                            <img src="../img/other/profile_img1.jpg" class="profile_image">
+                        </div>
+                        <div class="profile_fields">
+                            <div class="nickname_field">
+                                <img class="icon_field" src="../img/svg/person-circle.svg">
+                                <div class="ml-20">
+                                    <input type="text" style="width: 490px; height: 30px;" value="" class="form__input_text" readonly>
+                                </div>
+                            </div>
+                            <div class="email_field">
+                                <img class="icon_field" src="../img/svg/symbol_dog.svg">
+                                <div class="ml-20">
+                                    <input type="text" style="width: 196px; height: 22px;" value="" class="form__input_text" readonly>
+                                </div>
+                            </div>
+                        </div>
+<!--                        <div class="profile_other_information">-->
+<!--                            <div class="password_field">-->
+<!--                                <img src="../img/svg/key-fill.svg">-->
+<!--                                <div class="ml-10">-->
+<!--                                    <p class="form__input_text">*************</p>-->
+<!--                                </div>-->
+<!--                                <div class="ml-10">-->
+<!--                                    <button class="reset_password"></button>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="gender_field">-->
+<!--                                <p class="form__input_text">Пол</p>-->
+<!--                            </div>-->
+<!--                            <div class="birthday_field">-->
+<!--                                <p class="form__input_text">День рождения</p>-->
+<!--                                <div class="birthday_date">-->
+<!--                                    <button class="select_birthday_year"></button>-->
+<!--                                    <button class="select_birthday_mounth"></button>-->
+<!--                                    <button class="select_birthday_day"></button>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+                        <div class="profile_options_menu">
+                            <button class="profile_share"></button>
+                            <button class="profile_edit ml-25"></button>
+                            <button class="profile_confirm ml-25"></button>
+                        </div>
+                    </div>
+                    <div class="profile_progress">
+                        <div class="background_prog_img">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                    <div class="profile_about">
+                        <div class="background_about_img">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                    <div class="profile_statistics">
+                        <div class="background_stats_img">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- <div class="form__profile">
+                    <img class="background_profile_information" src="../img/other/Rectangle201.png">
+                    <div class="profile_information">
+                        <div class="block_profile_pic">
+                            <input class="load_profile_image" type="file" id="avatar" name="avatar" accept="image/png, image/jpeg, image/jpg" >
+                            <img src="../img/other/profile_img1.jpg" class="profile_image">
+                        </div>
+                        <div class="block_profile_information">
+                            <div class="nickname_field">
+                                <img class="icon_field" src="../img/svg/person-circle.svg">
+                                <p>{{ form.nickname }}</p>
+                            </div>
+                            <div class="first_name_field">
+                                <img class="icon_field" src="../img/svg/globe.svg">
+                                <p>{{ form.first_name }}</p>
+                            </div>
+                            <div class="email_field">
+                                <img class="icon_field" src="../img/svg/symbol_dog.svg">
+                                <p>{{ form.mail }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile_progress">
+
+                    </div>
+                    <div class="profile_about">
+
+                    </div>
+                    <div class="profile_statistics">
+
+                    </div>
+                </div> -->
+
+
+                <div class="auth-form">
+                    <section class="intro2">
+                        <nav class="auth__nav">
+                            <div class="auth__type">
+                                <div class="auth">
+                                    <a class="auth__link_entrence">Вход</a>
+                                    <img src="../img/other/auth_form_rect_main_line2.png" class="auth__line2">
+
+                                </div>
+                                <div class="reg">
+                                    <a class="reg__link_registration">Регистрация</a>
+                                    <img src="../img/other/auth_form_rect_main_line1.png" class="auth__line1">
+                                </div>
+                            </div>
+                            <div class="auth__society">
+                                <ul class="auth__list">
+                                    <li class="auth__item">
+                                        <a href="#!" class="auth__link">
+                                            <img src="../img/svg/Auth/google.svg" class="nav-logo_auth_google">
+                                        </a>
+                                    </li>
+                                    <li class="auth__item">
+                                        <a href="#!" class="auth__link">
+                                            <img src="../img/svg/Auth/vk.svg" class="nav-logo_vk">
+                                        </a>
+                                    </li>
+                                    <li class="auth__item">
+                                        <a href="#!" class="auth__link">
+                                            <img src="../img/svg/Auth/twitter.svg" class="nav-logo_twitter">
+                                        </a>
+                                    </li>
+                                    <li class="auth__item">
+                                        <a href="#!" class="auth__link">
+                                            <img src="../img/svg/Auth/instagramm.svg" class="nav-logo_instagramm">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <form class="auth-form">
+                            <div class="form__login">
+                                <p class="reg_form__base_text">Имя пользователя</p>
+                                <div class="create_login">
+                                    <input type="text"  name="new_login" maxlength="56" size="56">
+                                </div>
+                                <img src="../img/other/auth_form_rect_main_line3.png" class="auth__line3">
+                            </div>
+                            <div class="form__email">
+                                <p class="reg_form__base_text">Почта</p>
+                                <div class="create_email">
+                                    <input type="text"  name="new_email" maxlength="32" size="32">
+                                </div>
+                                <img src="../img/other/auth_form_rect_main_line3.png" class="auth__line3">
+                            </div>
+                            <div class="form__password">
+                                <p class="reg_form__base_text">Пароль</p>
+                                <div class="create_password">
+                                    <input type="text"  name="new_password" maxlength="100" size="52">
+                                    <img src="../img/svg/open_eye.svg" class="auth__password_eye">
+                                </div>
+                                <img src="../img/other/auth_form_rect_main_line3.png" class="auth__line3">
+                            </div>
+                            <!-- <button type="submit" class="form__final_submit">Войти</button> -->
+                        </form>
+                        <div class="form__btn_final_submit_registraion">
+                            <button type="button" class="btn btn-danger" style="background: #3FBF5B; border: 0px; border-radius: 50px; width: 240px; height: 40px; font-family: 'Inter'; font-size: 20px; line-height: 24px;">Создать</button>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+{% endblock %}
