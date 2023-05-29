@@ -4,6 +4,10 @@
 {% block title %}Main page{% endblock %}
 
 {% block content %}
-    <h1>Main page</h1>
+    {% if user.is_authenticated %}
+        <div>{{ user.username }}</div>
+    {% else %}
+        <div>Нет контента</div>
+    {% endif %} 
 {% endblock %}
 

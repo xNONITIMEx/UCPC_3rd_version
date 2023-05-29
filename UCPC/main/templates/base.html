@@ -47,6 +47,12 @@
                             <a href="#!" class="header__link">Report</a>
                         </li>
                     </ul>
+                    {% if user.is_authenticated %}
+                        <a href="/main/logout">Выйти</a> {{ user.username }}
+                        
+                    {% else %}
+                        <a href="/main/login">Войти</a>
+                    {% endif %}
                 </nav>
             </div>
         </div>

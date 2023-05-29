@@ -222,6 +222,7 @@ body {
   width: 100%;
   /* width: 100vw; */
   background-color: #1F1D1D;
+
 }
 
 .wrapper {
@@ -237,6 +238,7 @@ body {
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
+  color: white;
 }
 
 .header__title {
@@ -285,6 +287,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: white;
 }
 
 .header__list {

@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14accd05-684c-4e1d-b532-ca6975c5d491" name="Changes" comment="Added tag model">
+    <list default="true" id="14accd05-684c-4e1d-b532-ca6975c5d491" name="Changes" comment="Searching and filters added to Tags and Cards admin model">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UCPC/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/UCPC/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UCPC/main/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/UCPC/main/admin.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +66,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1684939224131</updated>
-      <workItem from="1685355278894" duration="3699000" />
+      <workItem from="1685355278894" duration="4288000" />
     </task>
     <task id="LOCAL-00001" summary="Started project">
       <created>1685352693181</created>
@@ -98,7 +96,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685360267294</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Searching and filters added to Tags and Cards admin model">
+      <created>1685360805154</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1685360805154</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,6 +136,7 @@
     <MESSAGE value="Started project" />
     <MESSAGE value="Added card model" />
     <MESSAGE value="Added tag model" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added tag model" />
+    <MESSAGE value="Searching and filters added to Tags and Cards admin model" />
+    <option name="LAST_COMMIT_MESSAGE" value="Searching and filters added to Tags and Cards admin model" />
   </component>
 </project>
