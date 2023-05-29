@@ -1,0 +1,87 @@
+{% extends 'main/base.html' %}
+
+{% load static%}
+
+{% block title %}Main page{% endblock %}
+
+{% block content %}
+    <div class="wrapper2">
+        <div class="auth-form">
+            <section class="intro2">
+                <nav class="auth__nav">
+                    <div class="auth__type">
+                        <div class="auth">
+                            <a class="auth__link_entrence"href="{% url 'authorization' %}" >Вход</a>
+                            <img src="{% static 'main/img/other/auth_form_rect_main_line1.png' %}" class="auth__line1">
+                        </div>
+                        <div class="reg">
+                            <a class="reg__link_registration" href="registration">Регистрация</a>
+                            <img src="{% static 'main/img/other/auth_form_rect_main_line2.png' %}" class="auth__line2">
+                        </div>
+                    </div>
+                    <div class="auth__society">
+                        <ul class="auth__list">
+                            <li class="auth__item">
+                                <a href="#!" class="auth__link">
+                                    <img src="{% static 'main/img/svg/Auth/google.svg' %}" class="nav-logo_auth_google">
+                                </a>
+                            </li>
+                            <li class="auth__item">
+                                <a href="#!" class="auth__link">
+                                    <img src="{% static 'main/img/svg/Auth/vk.svg' %}" class="nav-logo_vk">
+                                </a>
+                            </li>
+                            <li class="auth__item">
+                                <a href="#!" class="auth__link">
+                                    <img src="{% static 'main/img/svg/Auth/twitter.svg' %}" class="nav-logo_twitter">
+                                </a>
+                            </li>
+                            <li class="auth__item">
+                                <a href="#!" class="auth__link">
+                                    <img src="{% static 'main/img/svg/Auth/instagramm.svg' %}" class="nav-logo_instagramm">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <form class="auth-form" method="post">
+                    {{ csrf_token }}
+                    {{ form.as_p }}
+                    <button type="submit">Сохранить</button>
+                    <div class="form__login">
+                        <p class="form__base_text">Логин/почта</p>
+                        <div class="input_login_or_email">
+                            <input type="text"  name="name" maxlength="54" size="54">
+                        </div>
+                        <img src="{% static 'main/img/other/auth_form_rect_main_line3.png' %}" class="auth__line3">
+                    </div>
+                    <div class="form__password">
+                        <p class="form__base_text">Пароль</p>
+                        <div class="input_password">
+                            <input type="text"  name="name" maxlength="100" size="50">
+                            <img src="{% static 'main/img/svg/open_eye.svg' %}" class="auth__password_eye">
+                        </div>
+                        <img src="{% static 'main/img/other/auth_form_rect_main_line3.png' %}" class="auth__line3">
+                        <button type="button" class="btn btn-danger" style="margin-top: 10px; align-items: center; padding: 0; background: rgb(0, 0, 0, 0); border: rgb(0, 0, 0, 0); width: 150px; height: 24px; font-family: 'Inter'; font-size: 16px;">Забыли пароль?</button>
+                    </div>
+                    <div class="form__checkboxes">
+                        <div class="form__chb_password">
+                            <input type="checkbox" id="chb_password" name="password" checked>
+                            <label class="form__base_text" for="password">Сохранить пароль</label>
+                        </div>
+                        <div class="form__chb_get_news">
+                            <input type="checkbox" id="chb_get_news" name="news">
+                            <label class="form__base_text" for="news">Получать новости на почту</label>
+                        </div>
+                    </div>
+                    <div class="form__btn_final_submit">
+                        <button type="submit" class="btn btn-danger" style="background: #E83E3E; border-radius: 50px; width: 200px; height: 40px;">Войти</button>
+                    </div>
+                    <!-- <button type="submit" class="form__final_submit">Войти</button> -->
+                </form>
+
+            </section>
+        </div>
+    </div>
+{% endblock %}
+

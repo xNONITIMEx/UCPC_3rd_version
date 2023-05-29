@@ -5,7 +5,24 @@
 
 {% block content %}
     {% if user.is_authenticated %}
-        <div>{{ user.username }}</div>
+        <table>
+            <tr>
+                <td>Название</td>
+                <td>Содержание</td>
+                <td>Теги</td>
+                <td>Автор</td>
+            </tr>
+            {% for i in cards %}
+                <tr>
+<!--                    <td><a href="edit_card/{{ i.id }}"></a></td>-->
+                    <td>{{ i.title }}</td>
+                    <td>{{ i.desc }}</td>
+                    <td>{{ i.get_tags }}</td>
+                    <td>{{i.author}}</td>
+                </tr>
+            {% endfor %}
+            <a href="add_card">Добавить карту</a>
+        </table>
     {% else %}
         <div>Нет контента</div>
     {% endif %} 

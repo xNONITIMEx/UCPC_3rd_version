@@ -4,8 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14accd05-684c-4e1d-b532-ca6975c5d491" name="Changes" comment="Searching and filters added to Tags and Cards admin model">
+    <list default="true" id="14accd05-684c-4e1d-b532-ca6975c5d491" name="Changes" comment="Login/logout link created">
+      <change afterPath="$PROJECT_DIR$/UCPC/main/templates/add_edit_card.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UCPC/main/templates/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UCPC/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/UCPC/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UCPC/main/static/css/style_test.css" beforeDir="false" afterPath="$PROJECT_DIR$/UCPC/main/static/css/style_test.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UCPC/main/templates/authorization.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UCPC/main/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/UCPC/main/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UCPC/main/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/UCPC/main/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UCPC/main/templates/registration.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UCPC/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/UCPC/main/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UCPC/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/UCPC/main/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +26,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -33,6 +44,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
@@ -41,7 +53,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "editing.templates",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -67,6 +79,9 @@
       <option name="presentableId" value="Default" />
       <updated>1684939224131</updated>
       <workItem from="1685355278894" duration="4288000" />
+      <workItem from="1685377044516" duration="503000" />
+      <workItem from="1685377580797" duration="77000" />
+      <workItem from="1685377670125" duration="4394000" />
     </task>
     <task id="LOCAL-00001" summary="Started project">
       <created>1685352693181</created>
@@ -103,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685360805154</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Login/logout link created">
+      <created>1685377172589</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1685377172589</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,6 +159,7 @@
     <MESSAGE value="Added card model" />
     <MESSAGE value="Added tag model" />
     <MESSAGE value="Searching and filters added to Tags and Cards admin model" />
-    <option name="LAST_COMMIT_MESSAGE" value="Searching and filters added to Tags and Cards admin model" />
+    <MESSAGE value="Login/logout link created" />
+    <option name="LAST_COMMIT_MESSAGE" value="Login/logout link created" />
   </component>
 </project>

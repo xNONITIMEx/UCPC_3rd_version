@@ -44,7 +44,10 @@
                         </ul>
                     </div>
                 </nav>
-                <form class="auth-form">
+                <form class="auth-form" method="post">
+                    {{ csrf_token }}
+                    {{ form.as_p }}
+                    <button type="submit">Войти</button>
                     <div class="form__login">
                         <p class="form__base_text">Логин/почта</p>
                         <div class="input_login_or_email">
