@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14accd05-684c-4e1d-b532-ca6975c5d491" name="Changes" comment="Started project">
-      <change beforePath="$PROJECT_DIR$/.idea/UCPC_3rd_version.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/UCPC_3rd_version.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="14accd05-684c-4e1d-b532-ca6975c5d491" name="Changes" comment="Added card model">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UCPC/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/UCPC/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UCPC/main/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/UCPC/main/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UCPC/main/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/UCPC/main/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +67,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1684939224131</updated>
-      <workItem from="1685355278894" duration="1860000" />
+      <workItem from="1685355278894" duration="2979000" />
     </task>
     <task id="LOCAL-00001" summary="Started project">
       <created>1685352693181</created>
@@ -87,7 +83,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685354638449</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added card model">
+      <created>1685359127015</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1685359127015</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,6 +121,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Started project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Started project" />
+    <MESSAGE value="Added card model" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added card model" />
   </component>
 </project>
