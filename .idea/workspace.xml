@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14accd05-684c-4e1d-b532-ca6975c5d491" name="Changes" comment="Login/logout link created">
-      <change afterPath="$PROJECT_DIR$/UCPC/main/templates/add_edit_card.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UCPC/main/templates/login.html" afterDir="false" />
+    <list default="true" id="14accd05-684c-4e1d-b532-ca6975c5d491" name="Changes" comment="Created logout, login isn't working">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UCPC/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/UCPC/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UCPC/main/static/css/style_test.css" beforeDir="false" afterPath="$PROJECT_DIR$/UCPC/main/static/css/style_test.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UCPC/main/templates/authorization.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UCPC/main/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/UCPC/main/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UCPC/main/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/UCPC/main/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UCPC/main/templates/registration.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UCPC/main/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/UCPC/main/templates/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UCPC/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/UCPC/main/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UCPC/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/UCPC/main/views.py" afterDir="false" />
     </list>
@@ -48,7 +42,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/liaho/Documents/UCPC_3rd_version_new",
+    "last_opened_file_path": "C:/Users/liaho/Documents/UCPC_3rd_version_new/UCPC/main/templates/registration",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -59,10 +53,13 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\liaho\Documents\UCPC_3rd_version_new\UCPC\main\templates\registration" />
       <recent name="C:\Users\liaho\Documents\UCPC_3rd_version\UCPC\main" />
       <recent name="C:\Users\liaho\Documents\UCPC_3rd_version\UCPC\main\static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\liaho\Documents\UCPC_3rd_version_new\UCPC\main\templates" />
+      <recent name="C:\Users\liaho\Documents\UCPC_3rd_version_new\UCPC\main\templates\registration" />
       <recent name="C:\Users\liaho\Documents\UCPC_3rd_version\UCPC\main\templates" />
       <recent name="C:\Users\liaho\Documents\UCPC_3rd_version\UCPC\main\templates\main" />
     </key>
@@ -81,7 +78,8 @@
       <workItem from="1685355278894" duration="4288000" />
       <workItem from="1685377044516" duration="503000" />
       <workItem from="1685377580797" duration="77000" />
-      <workItem from="1685377670125" duration="4394000" />
+      <workItem from="1685377670125" duration="4435000" />
+      <workItem from="1685456554622" duration="3929000" />
     </task>
     <task id="LOCAL-00001" summary="Started project">
       <created>1685352693181</created>
@@ -125,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685377172589</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Created logout, login isn't working">
+      <created>1685387338739</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1685387338739</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,6 +165,7 @@
     <MESSAGE value="Added tag model" />
     <MESSAGE value="Searching and filters added to Tags and Cards admin model" />
     <MESSAGE value="Login/logout link created" />
-    <option name="LAST_COMMIT_MESSAGE" value="Login/logout link created" />
+    <MESSAGE value="Created logout, login isn't working" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created logout, login isn't working" />
   </component>
 </project>

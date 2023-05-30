@@ -1,15 +1,11 @@
 from django.contrib.auth import login, logout
 from django.contrib.auth.forms import AuthenticationForm
-from django.contrib.auth.views import LoginView
 from django.shortcuts import render, redirect
 from django.views import View
-from django.views.generic import TemplateView, FormView
+from django.views.generic import TemplateView, FormView, CreateView, UpdateView
 
 from .models import Cards
 
-
-def index(request):
-    return render(request, 'index.html')
 
 class Index(TemplateView):
     template_name = 'index.html'
@@ -24,19 +20,47 @@ class Index(TemplateView):
 
 class Login(FormView):
     form_class = AuthenticationForm
-    success_url = 'home'
+    success_url = '/'
     template_name = 'login.html'
 
     def form_valid(self, form):
-        self.user = form.ger_user()
+        self.user = form.get_user()
         login(self.request, self.user)
-        return super(LoginView, self).form_valid()
+        return super(Login, self).form_valid(form)
 
-    def from_invalid(self):
-        return super(LoginView, self).form_invalid()
+    def from_invalid(self, form):
+        return super(Login, self).form_invalid(form)
 
 
 class Logout(View):
     def get(self, request):
         logout(request)
-        redirect('home')
+        return redirect('/')
+
+
+class AddCard(CreateView):
+    fields = ['title', 'desc', 'tags']
+    model = Cards
+    success_url = '/'
+    template_name = 'add_edit_card.html'
+
+    def form_valid(self, form):
+        self.object = form.save(commit=False)
+        self.object.author = self.request.user
+        self.object.save()
+        for tag in form.cleaned_data['tags']:
+            self.object.tags.add(tag.id)
+        self.object.save()
+        return redirect(self.success_url)
+
+
+class EditCard(UpdateView):
+    model = Cards
+    fields = ['title', 'desc', 'tags']
+    success_url = '/'
+    template_name = 'add_edit_card.html'
+
+
+
+
+
