@@ -60,7 +60,6 @@ class EditCard(UpdateView):
     success_url = '/'
     template_name = 'add_edit_card.html'
 
-
-
-
-
+    def get_object(self, queryset=None):
+        obj = Cards.objects.get(id=self.kwargs['pk'])
+        return obj

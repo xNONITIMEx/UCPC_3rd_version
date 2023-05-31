@@ -1,4 +1,4 @@
-{% extends 'main/base.html' %}
+{% extends 'base.html' %}
 
 {% load static%}
 
@@ -11,7 +11,7 @@
                 <nav class="auth__nav">
                     <div class="auth__type">
                         <div class="auth">
-                            <a class="auth__link_entrence"href="{% url 'authorization' %}" >Вход</a>
+                            <a class="auth__link_entrence"href="}" >Вход</a>
                             <img src="{% static 'main/img/other/auth_form_rect_main_line1.png' %}" class="auth__line1">
                         </div>
                         <div class="reg">
@@ -45,7 +45,7 @@
                     </div>
                 </nav>
                 <form class="auth-form" method="post">
-                    {{ csrf_token }}
+                    {% csrf_token %}
                     {{ form.as_p }}
                     <button type="submit">Сохранить</button>
                     <div class="form__login">

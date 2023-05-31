@@ -14,8 +14,7 @@
             </tr>
             {% for i in cards %}
                 <tr>
-<!--                    <td><a href="edit_card/{{ i.id }}"></a></td>-->
-                    <td>{{ i.title }}</td>
+                    <td><a href="edit_card/{{ i.id }}">{{ i.title }}</a></td>
                     <td>{{ i.desc }}</td>
                     <td>{{ i.get_tags }}</td>
                     <td>{{i.author}}</td>
