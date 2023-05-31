@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% load static%}
+
+{% block title %}Main page{% endblock %}
+
+{% block content %}
+    <div class="wrapper2">
+        <div class="auth-form">
+            <section class="intro2">
+                <nav class="auth__nav">
+                    <div class="auth__type">
+                        <div class="auth">
+                            <a class="auth__link_entrence"href="" >Вход</a>
+                            <img src="{% static 'img/other/auth_form_rect_main_line1.png' %}" class="auth__line1">
+                        </div>
+                        <div class="reg">
+                            <a class="reg__link_registration" href="">Регистрация</a>
+                            <img src="{% static 'img/other/auth_form_rect_main_line2.png' %}" class="auth__line2">
+                        </div>
+                    </div>
+                    <div class="auth__society">
+                        <ul class="auth__list">
+                            <li class="auth__item">
+                                <a href="#!" class="auth__link">
+                                    <img src="{% static 'img/svg/Auth/google.svg' %}" class="nav-logo_auth_google">
+                                </a>
+                            </li>
+                            <li class="auth__item">
+                                <a href="#!" class="auth__link">
+                                    <img src="{% static 'img/svg/Auth/vk.svg' %}" class="nav-logo_vk">
+                                </a>
+                            </li>
+                            <li class="auth__item">
+                                <a href="#!" class="auth__link">
+                                    <img src="{% static 'img/svg/Auth/twitter.svg' %}" class="nav-logo_twitter">
+                                </a>
+                            </li>
+                            <li class="auth__item">
+                                <a href="#!" class="auth__link">
+                                    <img src="{% static 'img/svg/Auth/instagramm.svg' %}" class="nav-logo_instagramm">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                {% block form %}
+                {% endblock %}
+            </section>
+        </div>
+    </div>
+{% endblock %}

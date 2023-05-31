@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14accd05-684c-4e1d-b532-ca6975c5d491" name="Changes" comment="Created logout, login isn't working">
+    <list default="true" id="14accd05-684c-4e1d-b532-ca6975c5d491" name="Changes" comment="Adding and editing card created">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UCPC/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/UCPC/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UCPC/main/templates/add_edit_card.html" beforeDir="false" afterPath="$PROJECT_DIR$/UCPC/main/templates/add_edit_card.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UCPC/main/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/UCPC/main/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UCPC/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/UCPC/main/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UCPC/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/UCPC/main/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +78,7 @@
       <workItem from="1685377044516" duration="503000" />
       <workItem from="1685377580797" duration="77000" />
       <workItem from="1685377670125" duration="4435000" />
-      <workItem from="1685456554622" duration="3929000" />
+      <workItem from="1685456554622" duration="6365000" />
     </task>
     <task id="LOCAL-00001" summary="Started project">
       <created>1685352693181</created>
@@ -130,7 +129,21 @@
       <option name="project" value="LOCAL" />
       <updated>1685387338739</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Created login">
+      <created>1685474786475</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1685474786475</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Adding and editing card created">
+      <created>1685522730366</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1685522730366</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,7 +160,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
@@ -166,6 +179,8 @@
     <MESSAGE value="Searching and filters added to Tags and Cards admin model" />
     <MESSAGE value="Login/logout link created" />
     <MESSAGE value="Created logout, login isn't working" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created logout, login isn't working" />
+    <MESSAGE value="Created login" />
+    <MESSAGE value="Adding and editing card created" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding and editing card created" />
   </component>
 </project>
