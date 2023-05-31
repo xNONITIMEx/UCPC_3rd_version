@@ -14,7 +14,7 @@ class Index(TemplateView):
     def get(self, request):
         contex = {}
         if request.user.is_authenticated:
-            cards = Cards.objects.filter(author=request.user)
+            cards = Cards.objects.filter()
             contex['cards'] = cards
         return render(request, self.template_name, contex)
 

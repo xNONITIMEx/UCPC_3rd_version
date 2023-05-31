@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14accd05-684c-4e1d-b532-ca6975c5d491" name="Changes" comment="Adding and editing card created">
+    <list default="true" id="14accd05-684c-4e1d-b532-ca6975c5d491" name="Changes" comment="Registration added, but a bug with performing user's only cards found">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UCPC/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/UCPC/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UCPC/main/templates/add_edit_card.html" beforeDir="false" afterPath="$PROJECT_DIR$/UCPC/main/templates/add_edit_card.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UCPC/main/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/UCPC/main/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UCPC/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/UCPC/main/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +77,7 @@
       <workItem from="1685377044516" duration="503000" />
       <workItem from="1685377580797" duration="77000" />
       <workItem from="1685377670125" duration="4435000" />
-      <workItem from="1685456554622" duration="6365000" />
+      <workItem from="1685456554622" duration="13669000" />
     </task>
     <task id="LOCAL-00001" summary="Started project">
       <created>1685352693181</created>
@@ -143,7 +142,21 @@
       <option name="project" value="LOCAL" />
       <updated>1685522730366</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Added forms_base.html to minimalize html code in form templates">
+      <created>1685536207131</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1685536207131</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Registration added, but a bug with performing user's only cards found">
+      <created>1685548959208</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1685548959208</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,6 +194,8 @@
     <MESSAGE value="Created logout, login isn't working" />
     <MESSAGE value="Created login" />
     <MESSAGE value="Adding and editing card created" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding and editing card created" />
+    <MESSAGE value="Added forms_base.html to minimalize html code in form templates" />
+    <MESSAGE value="Registration added, but a bug with performing user's only cards found" />
+    <option name="LAST_COMMIT_MESSAGE" value="Registration added, but a bug with performing user's only cards found" />
   </component>
 </project>
