@@ -2,6 +2,20 @@
 
 {% load static%}
 
+
+{% block auth %}
+<div class="auth">
+    <a class="auth__link_entrence"href="{% url 'login' %}" >Вход</a>
+    <img src="{% static 'img/other/auth_form_rect_main_line1.png' %}" class="auth__line1">
+</div>
+{% endblock %}
+{% block register %}
+<div class="reg">
+    <a class="reg__link_registration" href="{% url 'register' %}">Регистрация</a>
+    <img src="{% static 'img/other/auth_form_rect_main_line2.png' %}" class="auth__line2">
+</div>
+{% endblock %}
+
 {% block form %}
     <form class="auth-form" method="post">
         {% csrf_token %}
